@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Lightworld Object
+  - Darkworld Object
+  - Light Effect
+  - Movable Object
   layers:
   - Default
   - TransparentFX
@@ -38,6 +42,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Lightworld
+    uniqueID: 1196116267
+    locked: 0
+  - name: Darkworld
+    uniqueID: 3806103889
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
