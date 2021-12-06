@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     private bool isJumping;
     private bool torchIsOn = true;
 
+    [Header("Effects")]
+    [SerializeField] private AudioClip[] clips = null;
+
     [Header("Miscellaneous")]
     [SerializeField] private bool isPaused = false;
     [SerializeField] private bool isInteracted = false;
@@ -48,6 +51,11 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
         ToggleTorch();
+    }
+
+    void FixedUpdate()
+    {
+        
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -81,7 +89,11 @@ public class PlayerController : MonoBehaviour
             currentVerticalSpeed = 0;
             moveVector.x = inputVector.x * movementSpeed;
 
-            if (isJumping) { currentVerticalSpeed = jumpSpeed; }
+            if (isJumping) 
+            { 
+                currentVerticalSpeed = jumpSpeed;
+                soundManager.PlaySound(clips[1]);
+            }
         }
         else { moveVector.x = inputVector.x * movementSpeed / 2; }
 
