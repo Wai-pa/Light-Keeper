@@ -32,8 +32,6 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private TorchController torchController;
 
-    
-
     void Start()
     {
         gameManager = GameManager.instance;

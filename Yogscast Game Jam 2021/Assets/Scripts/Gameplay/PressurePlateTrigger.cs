@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class PressurePlateTrigger : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
+    [SerializeField] private bool isPressed = false;
 
     void OnTriggerStay(Collider other)
     {
-        target.GetComponent<Collider>().isTrigger = true;
-
-        if (other.CompareTag("Movable Object"))
-        {
-            other.attachedRigidbody.isKinematic = true;
-        }
+        isPressed = true;
     }
 
     void OnTriggerExit(Collider other)
     {
-        target.GetComponent<Collider>().isTrigger = false;
+        isPressed = false;
+    }
+
+    public bool isPressurePadPressed()
+    {
+        return isPressed;
     }
 }
