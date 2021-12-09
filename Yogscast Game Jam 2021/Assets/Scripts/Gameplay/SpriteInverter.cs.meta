@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 360507294e0ccff40adeb0d0dbd92c7a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - darknessSpriteRendererPrefab: {fileID: 4815527813078475457, guid: ab8640a2284d3ef47abdc6476cd4ca2b, type: 3}
+  - lightSpriteRendererPrefab: {fileID: 1279239617330667536, guid: 7fcf31999dfab4642a3c733e23dda968, type: 3}
+  - invertColoursMaterial: {fileID: 2100000, guid: 197193b26553f4548a81a0bc991f868f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -16,15 +16,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpSpeed = 8f;
     [SerializeField] private float currentVerticalSpeed;
     [SerializeField] private float gravity = 9.8f;
-    private bool isJumping;
-    private bool torchIsOn = true;
+    [SerializeField] private bool isJumping;
+    [SerializeField] private bool torchIsOn = false;
+    [SerializeField] private bool isStanding = false;
 
     [Header("Effects")]
     [SerializeField] private AudioClip[] clips = null;
 
     [Header("Miscellaneous")]
     [SerializeField] private bool isPaused = false;
-    [SerializeField] private bool isInteracted = false;
+    public bool isPicked = false;
+    public bool isDrop = false;
     [SerializeField] private float forceToPushObj = 0.05f;
     private List<GameObject> ladders;
 
@@ -34,6 +36,11 @@ public class PlayerController : MonoBehaviour
     private PauseMenu pauseMenu;
     private CharacterController controller;
     private TorchController torchController;
+    private PlayerInventory inventory;
+    [SerializeField] private Animator animator;
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
+    private GameObject tempObj;
 
     void Start()
     {
@@ -43,6 +50,15 @@ public class PlayerController : MonoBehaviour
 
         controller = GetComponent<CharacterController>();
         torchController = GetComponentInChildren<TorchController>();
+        inventory = GetComponent<PlayerInventory>();
+
+        if (torchIsOn)
+        {
+            inventory.Add(PlayerInventory.InvetoryItem.Torch);
+        }
+        ToggleTorch(torchIsOn);
+
+        animator.SetBool("Standing", isStanding);
 
         ladders = new List<GameObject>();
     }
@@ -50,7 +66,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movement();
-        ToggleTorch();
+        UpdateTorch();
     }
 
     void FixedUpdate()
@@ -58,12 +74,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    public void OnMove(InputAction.CallbackContext context) // AD Keys
     {
         inputVector = context.ReadValue<Vector2>();
     }
 
-    public void OnJump(InputAction.CallbackContext context)
+    public void OnJump(InputAction.CallbackContext context) // Spacebar Key
     {
         if (context.performed)
         {
@@ -71,31 +87,65 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void OnPause(InputAction.CallbackContext context)
+    public void OnPause(InputAction.CallbackContext context) // ESC Key
     {
         isPaused = context.performed;
         pauseMenu.Pause(isPaused);
     }
 
-    public void OnInteraction(InputAction.CallbackContext context)
+    public void OnPickUp(InputAction.CallbackContext context) // E Key
     {
-        isInteracted = context.performed;
+        isPicked = context.performed;
+    }
+
+    public void OnDrop(InputAction.CallbackContext context) // R Key
+    {
+        tempObj.GetComponent<MoveObject>().DropDown();
     }
 
     void Movement()
     {
+        if (!isStanding)
+        {
+            if (inputVector != Vector2.zero)
+            {
+                isStanding = true;
+                animator.SetBool("Standing", isStanding);
+            }
+
+            return;
+        }
+
         if (controller.isGrounded)
         {
+            animator.SetBool("Grounded", true);
             currentVerticalSpeed = 0;
             moveVector.x = inputVector.x * movementSpeed;
+            animator.SetFloat("Speed", moveVector.x); // animator thing
+
+            if (moveVector.x > 0.1) // flip sprite
+            {
+                spriteRenderer.flipX = true;
+                animator.SetBool("flipped", true);
+            }
+            if (moveVector.x < -0.1)
+            {
+                spriteRenderer.flipX = false;
+                animator.SetBool("flipped", false);
+            }
 
             if (isJumping) 
             { 
                 currentVerticalSpeed = jumpSpeed;
                 soundManager.PlaySound(clips[1]);
+                animator.SetTrigger("Jump");
+                animator.SetBool("Grounded", false);
             }
         }
-        else { moveVector.x = inputVector.x * movementSpeed / 2; }
+        else 
+        { 
+            moveVector.x = inputVector.x * movementSpeed / 2; 
+        }
 
         isJumping = false;
 
@@ -112,15 +162,26 @@ public class PlayerController : MonoBehaviour
         controller.Move(moveVector * Time.deltaTime);
     }
 
-    void ToggleTorch()
+    void UpdateTorch()
     {
         if (!Input.GetButtonDown("Torch"))
         {
             return;
         }
 
-        torchIsOn = !torchIsOn;
+        if (!inventory.Contains(PlayerInventory.InvetoryItem.Torch))
+        {
+            return;
+        }
+
+        ToggleTorch(!torchIsOn);
+    }
+
+    void ToggleTorch(bool isOn)
+    {
+        torchIsOn = isOn;
         torchController.gameObject.SetActive(torchIsOn);
+        animator.SetBool("TorchOn", torchIsOn);
     }
 
     public void EnterLadder(GameObject ladder)
@@ -135,16 +196,12 @@ public class PlayerController : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (isInteracted)
+        if (hit.collider.gameObject.tag == "Movable Object")
         {
-            Rigidbody rigidbody = hit.collider.attachedRigidbody;
-            if (rigidbody != null)
+            if (isPicked)
             {
-                Vector3 forceDirection = hit.gameObject.transform.position - transform.position;
-                forceDirection.y = 0;
-                forceDirection.z = 0;
-                forceDirection.Normalize();
-                rigidbody.AddForceAtPosition(forceDirection * forceToPushObj, transform.position, ForceMode.Impulse);
+                hit.collider.gameObject.GetComponent<MoveObject>().PickUp();
+                tempObj = hit.collider.gameObject;
             }
         }
     }

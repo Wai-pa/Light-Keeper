@@ -42,6 +42,9 @@ public class DialogueManager : MonoBehaviour
             case DialogueEvent.WowIGotUpHere:
                 playerDialogueBox.SetText("Wow, I am on this platform now!", 4);
                 break;
+            case DialogueEvent.IShouldGetANewLightBulb:
+                playerDialogueBox.SetText("Sigh... I guess I should replace that", 5);
+                break;
         }
     }
 }

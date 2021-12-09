@@ -42,10 +42,10 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Lightworld
+  - name: Light
     uniqueID: 1196116267
     locked: 0
-  - name: Darkworld
+  - name: Darkness
     uniqueID: 3806103889
     locked: 0
   - name: Default

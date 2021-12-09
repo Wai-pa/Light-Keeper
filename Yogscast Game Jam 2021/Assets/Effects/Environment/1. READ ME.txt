@@ -1,0 +1,98 @@
+Here's a breakdown of where these sounds should go:
+
+
+box_push_loop
+	- fairly obvious, have the sound loop whenever player is pushing a box
+
+crow_alive
+	- for when the torch revives a dead bird, sound is synced to assumed 0.69 
+	  revive time
+
+crow_death
+	- for when the bird reverts to being dead from not being in the torch light
+
+crumble noise
+	- for when platforms revert back to being broken from not being in torch light
+
+darkworld_noise
+	- for when the darkworld begins after the girl under the lamp talks to player
+
+door_unlock
+	- for when the pressure plate puzzle is complete and the house door opens
+
+human_alive
+	- for when the girl under the lamp comes back to life, I don't think there's 
+	  any time in game where you visually see a human die aside from the lamp girl,
+	  but darkworld_noise should play then so I didn't think we needed a human dead
+	  noise
+
+item_ping
+	- should play when they player sees an important item, like the torch or the 
+	  seeds from the bird alongside a visual twinkle to let them know its important
+
+jumping
+	- when player jumps
+
+landing
+	- when player hits ground after a jump
+
+lifelight_loop
+	- should begin to loop after player picks up the torch, and then loop until end
+	  of the game
+
+lightbulb_crack
+	- I wasn't sure if we were making the intro cutscene or not, but if we are this 
+	  sound should play once the player begins the game as the light above them in 
+	  the room cracks and turns off ("I should go get a new lightbulb")
+
+lightbulb_loop
+	- For if the intro cutscene is made this can loop until the player hits play 
+	  and then the lightbulb cracks and game commences
+
+plant_grow
+	- for when the player grows the seed in the plant pot, sound is synced to an 
+	  assumed 0.69 second grow time
+
+pressure_plate
+	- for when a pressure plate is activated in the plate puzzle
+
+rebuild_noise
+	- for when the player rebuilds the crumbled platforms, sound is synced to 0.69
+
+speech_bubble_1
+speech_bubble_2
+	- couldnt decide which is more fitting, so I'll let you guys see once its in 
+	  game
+
+streetlamp_on
+	- for when the streetlamp over the girl turns on after darkworld begins, should 
+	  be followed shortly by human_alive to show girl being revived
+
+torch_off
+torch_on
+	- i trust u guys to know this one lol
+
+walking_loop
+	- loop whenever player is moving
+
+wind_ambiance_loop
+	- to be looped once darkworld has begun until player collects torch, should then
+	  be replaced by lifelight_loop
+
+wind_and_birds_ambiance_loop
+	- to be played during lightworld section of game, the reason i made two 
+	  different ambiance loops is that the birds would have died in darkworld so I 
+	  figured a wind loop without birds once it begins would be thematically
+	  appropriate
+
+
+Let me know if you need any more sound effects or if you need a better explanation for 
+any :D
+
+for the sounds to do with the torch rebuilding something i wasnt sure if i should have 
+a transitional sound that plays when the torch is shining on something and then a 
+seperate "complete transformation" sound so that the complete transformation sound 
+doesnt get cut off when the player moves the torch off it, but I've baked the two 
+together which is why theyre synced to a shorter time than the actual file (e.g. 0.69)
+so lmk if u need them seperate of if they're fine as is
+

@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: 1e940214fa1d4bd4180de1517c641518
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4804065678040996466
+    second: spritesheet_notorch_0
+  - first:
+      213: -5302475424981531924
+    second: spritesheet_notorch_1
+  - first:
+      213: 2769191779869545693
+    second: spritesheet_notorch_2
+  - first:
+      213: 503854728065000610
+    second: spritesheet_notorch_3
+  - first:
+      213: 8383902695894282153
+    second: spritesheet_notorch_4
+  - first:
+      213: 9109498132665754440
+    second: spritesheet_notorch_5
+  - first:
+      213: 5855921835685500516
+    second: spritesheet_notorch_6
+  - first:
+      213: 4217248873095888653
+    second: spritesheet_notorch_7
+  - first:
+      213: -5309915798044763798
+    second: spritesheet_notorch_8
+  - first:
+      213: -8250842419821857136
+    second: spritesheet_notorch_9
+  - first:
+      213: 8749096070132918225
+    second: spritesheet_notorch_10
+  - first:
+      213: -1834767033697733999
+    second: spritesheet_notorch_11
+  - first:
+      213: -3764722278442945451
+    second: spritesheet_notorch_12
+  - first:
+      213: -8706400341224728000
+    second: spritesheet_notorch_13
+  - first:
+      213: 3990879575035381635
+    second: spritesheet_notorch_14
+  - first:
+      213: 7283191618248546379
+    second: spritesheet_notorch_15
+  - first:
+      213: -675406129747459144
+    second: spritesheet_notorch_16
+  - first:
+      213: 7151859865575745276
+    second: spritesheet_notorch_17
+  - first:
+      213: 926059868589971798
+    second: spritesheet_notorch_18
+  - first:
+      213: -7050447284573404512
+    second: spritesheet_notorch_19
+  - first:
+      213: -8815467731064420802
+    second: spritesheet_notorch_20
+  - first:
+      213: 5943386108974314987
+    second: spritesheet_notorch_21
+  - first:
+      213: 3058725185050477683
+    second: spritesheet_notorch_22
+  - first:
+      213: -6339902879238357655
+    second: spritesheet_notorch_23
+  - first:
+      213: -646423040004573546
+    second: spritesheet_notorch_24
+  - first:
+      213: 6436688298858817789
+    second: spritesheet_notorch_25
+  - first:
+      213: -5306460218701252032
+    second: spritesheet_notorch_26
+  - first:
+      213: -5306785900034866491
+    second: spritesheet_notorch_27
+  - first:
+      213: 2460831963327449121
+    second: spritesheet_notorch_28
+  - first:
+      213: -6530219557935324636
+    second: spritesheet_notorch_29
+  - first:
+      213: 4729178777965392339
+    second: spritesheet_notorch_30
+  - first:
+      213: 3089144877290990790
+    second: spritesheet_notorch_31
+  - first:
+      213: 7398134575802042072
+    second: spritesheet_notorch_32
+  - first:
+      213: 8572182789542892081
+    second: spritesheet_notorch_33
+  - first:
+      213: 1993364966190679495
+    second: spritesheet_notorch_34
+  - first:
+      213: 8441450496142679137
+    second: spritesheet_notorch_35
+  - first:
+      213: 4797880234303054323
+    second: spritesheet_notorch_36
+  - first:
+      213: 8485170403580696858
+    second: spritesheet_notorch_37
+  - first:
+      213: -3163881903739972989
+    second: spritesheet_notorch_38
+  - first:
+      213: 2484730171836626130
+    second: spritesheet_notorch_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet_notorch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8568b608b7845db0800000000000000
+      internalID: -4804065678040996466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2ccb7d1b2d966b0800000000000000
+      internalID: -5302475424981531924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_2
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd45e0280452e6620800000000000000
+      internalID: 2769191779869545693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_3
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a427b4a43d0ef600800000000000000
+      internalID: 503854728065000610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_4
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afe734051b995470800000000000000
+      internalID: 8383902695894282153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84360a799407b6e70800000000000000
+      internalID: 9109498132665754440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_6
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466dc7032e9644150800000000000000
+      internalID: 5855921835685500516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_7
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ffb42918da68a30800000000000000
+      internalID: 4217248873095888653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_8
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a699e4ef6b36f46b0800000000000000
+      internalID: -5309915798044763798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_9
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 751
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0963bc4b88e1f7d80800000000000000
+      internalID: -8250842419821857136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7e90665880b6970800000000000000
+      internalID: 8749096070132918225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19279d69a199986e0800000000000000
+      internalID: -1834767033697733999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_12
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554b86bb80501cbc0800000000000000
+      internalID: -3764722278442945451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_13
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ad5f4a407ac2780800000000000000
+      internalID: -8706400341224728000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387885334d3726730800000000000000
+      internalID: 3990879575035381635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_15
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b489ec45038131560800000000000000
+      internalID: 7283191618248546379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_16
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3084514b970a6f0800000000000000
+      internalID: -675406129747459144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_17
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6e303d7a2804360800000000000000
+      internalID: 7151859865575745276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_18
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659dc044b860adc00800000000000000
+      internalID: 926059868589971798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_19
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 501
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2826fac87c72e90800000000000000
+      internalID: -7050447284573404512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e368cf01eca29a580800000000000000
+      internalID: -8815467731064420802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_21
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5b76c3d262b7250800000000000000
+      internalID: 5943386108974314987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_22
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37489789956c27a20800000000000000
+      internalID: 3058725185050477683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_23
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d758cebe32408a0800000000000000
+      internalID: -6339902879238357655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_24
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69636e58ba17707f0800000000000000
+      internalID: -646423040004573546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_25
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8a46f97e5b35950800000000000000
+      internalID: 6436688298858817789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_26
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04af191cb8aab56b0800000000000000
+      internalID: -5306460218701252032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_27
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2ce5927528a56b0800000000000000
+      internalID: -5306785900034866491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_28
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1284f02f1a1a62220800000000000000
+      internalID: 2460831963327449121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_29
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 251
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422e4ff19efff55a0800000000000000
+      internalID: -6530219557935324636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d171f3da0b61a140800000000000000
+      internalID: 4729178777965392339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_31
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca5ae16e8deda20800000000000000
+      internalID: 3089144877290990790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_32
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6473f13347ba660800000000000000
+      internalID: 7398134575802042072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_33
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132db6864d286f670800000000000000
+      internalID: 8572182789542892081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_34
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c5018d10ead9ab10800000000000000
+      internalID: 1993364966190679495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_35
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c11a3608e062570800000000000000
+      internalID: 8441450496142679137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_36
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1608027ae759240800000000000000
+      internalID: 4797880234303054323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_37
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a19d514968161c570800000000000000
+      internalID: 8485170403580696858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_38
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382da48eb22a714d0800000000000000
+      internalID: -3163881903739972989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_notorch_39
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 1
+        width: 189
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d474073de88b7220800000000000000
+      internalID: 2484730171836626130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

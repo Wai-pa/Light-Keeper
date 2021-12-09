@@ -15,7 +15,7 @@ public class TorchController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var currentCamera = Camera.current;
+        var currentCamera = Camera.main;
         if (currentCamera == null || pauseMenu.GameIsPaused())
         {
             return;
