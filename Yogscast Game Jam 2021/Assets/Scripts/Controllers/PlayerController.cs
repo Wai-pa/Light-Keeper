@@ -40,6 +40,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
+    public GameObject torchOnGround;
+
     private GameObject tempObj;
 
     void Start()
@@ -169,17 +171,24 @@ public class PlayerController : MonoBehaviour
 
     void UpdateTorch()
     {
-        if (!Input.GetButtonDown("Torch"))
-        {
-            return;
-        }
+        
 
-        if (!inventory.Contains(PlayerInventory.InvetoryItem.Torch))
+        if (inventory.Contains(PlayerInventory.InvetoryItem.Torch))
         {
-            return;
+            if (Input.GetButtonDown("Torch"))
+            {
+                ToggleTorch(!torchIsOn);
+            }            
         }
-
-        ToggleTorch(!torchIsOn);
+        else
+        {
+            if (isPicked && torchOnGround != null && Vector3.Distance(torchOnGround.transform.position, transform.position) < 1)
+            {
+                inventory.Add(PlayerInventory.InvetoryItem.Torch);
+                ToggleTorch(true);
+                Destroy(torchOnGround);
+            }
+        }
     }
 
     void ToggleTorch(bool isOn)

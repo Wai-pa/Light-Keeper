@@ -6,6 +6,7 @@ public class WaypointNavController : MonoBehaviour
 {
     public Transform[] waypoints;
     public float speed;
+    public Vector3 movementDirection;
 
     private int currentWaypoint;
 
@@ -37,7 +38,7 @@ public class WaypointNavController : MonoBehaviour
 
     private void Move()
     {
-        var movementDirection = (waypoints[currentWaypoint].position - transform.position).normalized;
+        movementDirection = (waypoints[currentWaypoint].position - transform.position).normalized;
 
         transform.position += movementDirection * speed * Time.deltaTime;
     }

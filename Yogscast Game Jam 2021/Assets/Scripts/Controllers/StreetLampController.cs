@@ -10,6 +10,7 @@ public class StreetLampController : MonoBehaviour
     public bool turnOff;
 
     private AudioSource audioSource;
+    private bool isOn;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,21 @@ public class StreetLampController : MonoBehaviour
             turnOff = false;
         }
 #endif
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.CompareTag("Player"))
+        {
+            return;
+        }
+
+        if (isOn)
+        {
+            return;
+        }
+
+        FlickerOn();
     }
 
     public void FlickerOn()
@@ -74,6 +90,7 @@ public class StreetLampController : MonoBehaviour
 
     private void Toggle(bool isOn)
     {
+        this.isOn = isOn;
         lightMask.SetActive(isOn);
         lightEffect.SetActive(isOn);
     }

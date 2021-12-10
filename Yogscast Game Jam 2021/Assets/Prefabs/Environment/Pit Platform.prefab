@@ -73,10 +73,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ab0fdeabfc68d4ca883fa1f87e2cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightworldConversionDuration: 1
-  darkworldConversionDuration: 1.2
+  lightworldConversionDuration: 0
+  darkworldConversionDuration: 1
   changeToLightworldSound: {fileID: 8300000, guid: bdcdf4a97671428438b985ee4c1dd1bd, type: 3}
   changeToDarkworldSound: {fileID: 8300000, guid: 801cc73d24621354fa1c492f53094268, type: 3}
+  showingLightworldObject: 0
 --- !u!82 &5918242717519845408
 AudioSource:
   m_ObjectHideFlags: 0

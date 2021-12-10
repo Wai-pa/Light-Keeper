@@ -531,7 +531,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Tom
+  m_Text: 'Tom Slack
 
 '
 --- !u!1 &4547950582602768131
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb9821b02c452244aa3203b9cac86fa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuPanel: {fileID: 0}
+  mainMenuPanel: {fileID: 0}
   creditsPanel: {fileID: 4547950582602768131}
 --- !u!1 &8852187071607405491
 GameObject:

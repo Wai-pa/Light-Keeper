@@ -14,11 +14,6 @@ public class DialogueTrigger : MonoBehaviour
         dialogueManager = DialogueManager.instance;
     }
 
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!collision.CompareTag("Player"))

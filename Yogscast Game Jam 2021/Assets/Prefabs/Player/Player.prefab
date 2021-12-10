@@ -362,7 +362,7 @@ MonoBehaviour:
   currentVerticalSpeed: 0
   gravity: 9.8
   isJumping: 0
-  torchIsOn: 1
+  torchIsOn: 0
   isStanding: 1
   clips:
   - {fileID: 8300000, guid: 382c76ac530f214479bc6dfc24c22d03, type: 3}
@@ -377,6 +377,7 @@ MonoBehaviour:
   forceToPushObj: 0.05
   animator: {fileID: 1553532493570193703}
   spriteRenderer: {fileID: 1553532493654102733}
+  torchOnGround: {fileID: 0}
 --- !u!114 &7686174687719429645
 MonoBehaviour:
   m_ObjectHideFlags: 0

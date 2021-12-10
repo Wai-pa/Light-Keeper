@@ -34,7 +34,7 @@ AnimationClip:
     - time: 1.3333334
       value: {fileID: -8014360147586752980, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
     attribute: m_Sprite
-    path: Lightworld Version
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -45,7 +45,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2349913226
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212

@@ -32,9 +32,9 @@ AnimationClip:
     - time: 0.8
       value: {fileID: 9062107628125059547, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
     - time: 0.9
-      value: {fileID: 9062107628125059547, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
+      value: {fileID: 2764342449736659431, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
     attribute: m_Sprite
-    path: Lightworld Version
+    path: 
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -45,7 +45,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2349913226
+      path: 0
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -58,7 +58,7 @@ AnimationClip:
     - {fileID: -2897402894876186186, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
     - {fileID: 2524828442308052015, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
     - {fileID: 9062107628125059547, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
-    - {fileID: 9062107628125059547, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
+    - {fileID: 2764342449736659431, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

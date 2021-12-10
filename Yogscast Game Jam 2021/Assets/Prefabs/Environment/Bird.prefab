@@ -350,6 +350,8 @@ GameObject:
   - component: {fileID: 6884316899895722170}
   - component: {fileID: 760906966}
   - component: {fileID: 875018234793003825}
+  - component: {fileID: 2358387413103221669}
+  - component: {fileID: 4644814892765022718}
   m_Layer: 0
   m_Name: Live Bird
   m_TagString: Lightworld Object
@@ -388,6 +390,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   speed: 2
+  movementDirection: {x: 0, y: 0, z: 0}
 --- !u!114 &6884316899895722170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,3 +477,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2358387413103221669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214138722328071353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4a8c32fd8058064989b9367374ef7d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlert: 0
+  flyingSpeed: 2
+--- !u!61 &4644814892765022718
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214138722328071353}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03744507, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 0.56, y: 0.41}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.642868, y: 1}
+  m_EdgeRadius: 0
