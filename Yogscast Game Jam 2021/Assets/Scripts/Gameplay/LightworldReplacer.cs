@@ -14,7 +14,7 @@ public class LightworldReplacer : MonoBehaviour
     public AudioClip changeToLightworldSound;
     public AudioClip changeToDarkworldSound;
 
-    private bool showingLightworldObject;
+    public bool showingLightworldObject = false;
 
     private new BoxCollider2D collider;
 
@@ -30,8 +30,6 @@ public class LightworldReplacer : MonoBehaviour
     {
         timeToConvertToLightworld = null;
         timeToConvertToDarkworld = null;
-
-        showingLightworldObject = false;
 
         collider = GetComponent<BoxCollider2D>();
 
@@ -53,7 +51,7 @@ public class LightworldReplacer : MonoBehaviour
 
         audioSource = GetComponent<AudioSource>();
 
-        SetLightworld(false, playSound: false);
+        SetLightworld(showingLightworldObject, playSound: false);
     }
 
     void Update()

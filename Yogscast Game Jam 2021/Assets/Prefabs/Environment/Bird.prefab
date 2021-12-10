@@ -52,6 +52,7 @@ MonoBehaviour:
   darkworldConversionDuration: 0.5
   changeToLightworldSound: {fileID: 8300000, guid: 77a5cabba7b5b8a4ea20996ed09f7b1e, type: 3}
   changeToDarkworldSound: {fileID: 8300000, guid: 460d05a4d71fa394297f322f83a09765, type: 3}
+  showingLightworldObject: 1
 --- !u!61 &6214138721017609326
 BoxCollider2D:
   m_ObjectHideFlags: 0
