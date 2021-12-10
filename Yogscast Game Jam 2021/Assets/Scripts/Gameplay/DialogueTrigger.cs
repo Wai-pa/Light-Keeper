@@ -9,13 +9,11 @@ public class DialogueTrigger : MonoBehaviour
 
     private DialogueManager dialogueManager;
 
-    // Start is called before the first frame update
     void Start()
     {
         dialogueManager = DialogueManager.instance;
     }
 
-    // Update is called once per frame
     void Update()
     {
         

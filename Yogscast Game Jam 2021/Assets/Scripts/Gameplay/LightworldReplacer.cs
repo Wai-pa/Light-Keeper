@@ -11,12 +11,16 @@ public class LightworldReplacer : MonoBehaviour
     public float? timeToConvertToLightworld;
     public float? timeToConvertToDarkworld;
 
+    public AudioClip changeToLightworldSound;
+    public AudioClip changeToDarkworldSound;
+
     private bool showingLightworldObject;
 
     private new BoxCollider2D collider;
 
     private List<GameObject> lightworldObjects;
     private List<GameObject> darkworldObjects;
+    private AudioSource audioSource;
 
     private const string lightEffectTag = "Light Effect";
     private const string lightworldObjectTag = "Lightworld Object";
@@ -47,7 +51,9 @@ public class LightworldReplacer : MonoBehaviour
             }
         }
 
-        SetLightworld(false);
+        audioSource = GetComponent<AudioSource>();
+
+        SetLightworld(false, playSound: false);
     }
 
     void Update()
@@ -73,6 +79,22 @@ public class LightworldReplacer : MonoBehaviour
             return;
         }
 
+        OnIllumination();
+    }
+
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag != lightEffectTag)
+        {
+            return;
+        }
+
+        OnIllumination();
+    }
+
+    private void OnIllumination()
+    {
         if (!showingLightworldObject)
         {
             timeToConvertToLightworld = Time.time + lightworldConversionDuration;
@@ -106,7 +128,7 @@ public class LightworldReplacer : MonoBehaviour
         }        
     }
 
-    private void SetLightworld(bool isLightworld)
+    private void SetLightworld(bool isLightworld, bool playSound = true)
     {
         foreach(var lightworldObject in lightworldObjects)
         {
@@ -118,5 +140,17 @@ public class LightworldReplacer : MonoBehaviour
         }
 
         showingLightworldObject = isLightworld;
+
+        if (playSound)
+        {
+            if (isLightworld)
+            {
+                audioSource.PlayOneShot(changeToLightworldSound);
+            }
+            else
+            {
+                audioSource.PlayOneShot(changeToDarkworldSound);
+            }
+        }
     }
 }

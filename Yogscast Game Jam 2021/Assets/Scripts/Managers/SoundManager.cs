@@ -6,8 +6,8 @@ public class SoundManager : MonoBehaviour
 {
     public static SoundManager instance = null;
 
-    [SerializeField] private AudioSource musicSource;
-    [SerializeField] private AudioSource effectsSource;
+    public AudioSource musicSource;
+    public AudioSource effectsSource;
 
     public AudioClip lifeLight;
     public AudioClip lightbulb;
@@ -46,7 +46,7 @@ public class SoundManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void ChangeMasterVolume( float value)
+    public void ChangeMasterVolume(float value)
     {
         AudioListener.volume = value;
     }

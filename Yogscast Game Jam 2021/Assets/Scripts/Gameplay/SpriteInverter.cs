@@ -21,6 +21,13 @@ public class SpriteInverter : MonoBehaviour
         var sprite = parentSpriteRenderer.sprite;
         Destroy(parentSpriteRenderer);
 
+        RuntimeAnimatorController animatorController = null;
+        if (TryGetComponent(out Animator parentAnimator))
+        {
+            animatorController = parentAnimator.runtimeAnimatorController;
+            Destroy(parentAnimator);
+        }
+
         var darknessSpriteGameObject = GameObject.Instantiate(darknessSpriteRendererPrefab, transform);
         var lightSpriteGameObject = GameObject.Instantiate(lightSpriteRendererPrefab, transform);
 
@@ -37,6 +44,19 @@ public class SpriteInverter : MonoBehaviour
         else
         {
             darknessSpriteRenderer.material = invertColoursMaterial;
+        }
+
+        var darknessAnimator = darknessSpriteGameObject.GetComponent<Animator>();
+        var lightAnimator = lightSpriteGameObject.GetComponent<Animator>();
+        if (animatorController == null)
+        {
+            Destroy(darknessAnimator);
+            Destroy(lightAnimator);
+        }
+        else
+        {
+            darknessAnimator.runtimeAnimatorController = animatorController;
+            lightAnimator.runtimeAnimatorController = animatorController;
         }
     }
 }

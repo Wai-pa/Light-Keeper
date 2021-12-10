@@ -11,15 +11,13 @@ public class StartingSceneEvents : MonoBehaviour
     public GameObject inputManager;
     public GameObject roomLight;
     public GameObject doorLight;
-    public AudioClip lightbulbCrack;
+    public LightbulbController lightbulbController;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -36,8 +34,8 @@ public class StartingSceneEvents : MonoBehaviour
 
         inputManager.SetActive(true);
         roomLight.SetActive(false);
-        SoundManager.instance.PlaySound(lightbulbCrack);
-        SoundManager.instance.SetBackgroundMusic(BackgroundMusic.None);
+
+        lightbulbController.Break();
 
         yield return new WaitForSeconds(noticeLightBuldDelay);
 

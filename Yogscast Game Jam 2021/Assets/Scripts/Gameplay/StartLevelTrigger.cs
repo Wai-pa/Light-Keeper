@@ -6,7 +6,6 @@ public class StartLevelTrigger : MonoBehaviour
 {
     public Animator levelFadeAnimator;
 
-    // Start is called before the first frame update
     void Start()
     {
         

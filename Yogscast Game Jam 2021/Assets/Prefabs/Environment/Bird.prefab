@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6214138721017609327}
   - component: {fileID: 6214138721017609326}
   - component: {fileID: 6214138721017609321}
+  - component: {fileID: 307086065}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -49,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lightworldConversionDuration: 0.5
   darkworldConversionDuration: 0.5
+  changeToLightworldSound: {fileID: 8300000, guid: 77a5cabba7b5b8a4ea20996ed09f7b1e, type: 3}
+  changeToDarkworldSound: {fileID: 8300000, guid: 460d05a4d71fa394297f322f83a09765, type: 3}
 --- !u!61 &6214138721017609326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87,6 +90,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bd28a400d0536946bad750b8982360a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &307086065
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214138721017609325}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6214138721156764436
 GameObject:
   m_ObjectHideFlags: 0
@@ -100,8 +199,9 @@ GameObject:
   - component: {fileID: 6214138721156764439}
   - component: {fileID: 8389616408487007758}
   - component: {fileID: 1120697278}
+  - component: {fileID: 1372144925}
   m_Layer: 0
-  m_Name: Darkworld Version
+  m_Name: Bird Skeleton
   m_TagString: Darkworld Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,7 +306,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5292850275411423821, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
+  m_Sprite: {fileID: -8037178227759683841, guid: 11b94cca53fa7d147975571fe71be057, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -217,6 +317,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1372144925
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214138721156764436}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30f7997921cc12d4d9e45908af293fb1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6214138722328071353
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,8 +348,9 @@ GameObject:
   - component: {fileID: 6214138722328071355}
   - component: {fileID: 6884316899895722170}
   - component: {fileID: 760906966}
+  - component: {fileID: 875018234793003825}
   m_Layer: 0
-  m_Name: Lightworld Version
+  m_Name: Live Bird
   m_TagString: Lightworld Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -334,3 +454,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &875018234793003825
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6214138722328071353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4c68483bde98d54cb21a8c6f220a713, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

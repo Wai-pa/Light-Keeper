@@ -20,7 +20,7 @@ public class MoveObject : MonoBehaviour
         objectToMove.GetComponent<Rigidbody>().isKinematic = true;
         objectToMove.transform.position = holderTransform.transform.position;
         objectToMove.transform.rotation = holderTransform.transform.rotation;
-        objectToMove.transform.parent = holder.transform.parent;
+        objectToMove.transform.parent.parent = holder.transform.parent;
         objectIsGrounded = false;
     }
 
@@ -28,7 +28,7 @@ public class MoveObject : MonoBehaviour
     {
         objectToMove.GetComponent<Rigidbody>().useGravity = true;
         objectToMove.GetComponent<Rigidbody>().isKinematic = false;
-        objectToMove.transform.parent = null;
+        objectToMove.transform.parent.parent = null;
         objectToMove.transform.position = holderTransform.transform.position;
         objectIsGrounded = true;
     }

@@ -4,6 +4,13 @@ public enum DialogueEvent
 
     IShouldGetUpThere,
     WowIGotUpHere,
+    PeopleOnBench,
+    Store,
+    OppositeDayGirl,
+    StuckUnderStairs,
+    NeedToGetSeeds,
+    PressurePlatesUnlockDoor,
+    PeopleOnBenchAfterRessurection,
 
     #endregion
 

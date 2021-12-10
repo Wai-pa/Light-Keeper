@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4347195847460279254}
   - component: {fileID: 2008102073904376824}
+  - component: {fileID: 470586470}
   m_Layer: 0
   m_Name: PlateActive
   m_TagString: Untagged
@@ -82,6 +83,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &470586470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615423584951858130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360507294e0ccff40adeb0d0dbd92c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSpriteType: 0
+  darknessSpriteRendererPrefab: {fileID: 4815527813078475457, guid: ab8640a2284d3ef47abdc6476cd4ca2b, type: 3}
+  lightSpriteRendererPrefab: {fileID: 1279239617330667536, guid: 7fcf31999dfab4642a3c733e23dda968, type: 3}
+  invertColoursMaterial: {fileID: 2100000, guid: 197193b26553f4548a81a0bc991f868f, type: 2}
 --- !u!1 &4178530178123868130
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7245154919999418083}
   - component: {fileID: 3776629087476880637}
+  - component: {fileID: 458191326}
   m_Layer: 0
   m_Name: PlateInactive
   m_TagString: Untagged
@@ -164,6 +182,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &458191326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178530178123868130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360507294e0ccff40adeb0d0dbd92c7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultSpriteType: 0
+  darknessSpriteRendererPrefab: {fileID: 4815527813078475457, guid: ab8640a2284d3ef47abdc6476cd4ca2b, type: 3}
+  lightSpriteRendererPrefab: {fileID: 1279239617330667536, guid: 7fcf31999dfab4642a3c733e23dda968, type: 3}
+  invertColoursMaterial: {fileID: 2100000, guid: 051a82422569a3a4e83739390914c3c4, type: 2}
 --- !u!1 &8629448289731170226
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,6 +210,7 @@ GameObject:
   - component: {fileID: 8629448289731170223}
   - component: {fileID: 8629448289731170224}
   - component: {fileID: 8629448289731170225}
+  - component: {fileID: 2105009844}
   m_Layer: 0
   m_Name: Pressure Plate
   m_TagString: Untagged
@@ -276,3 +311,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.35601807, y: 4.918773, z: 0.2}
   m_Center: {x: 0.009899139, y: 2.0336044, z: 0}
+--- !u!114 &2105009844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8629448289731170226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ab0fdeabfc68d4ca883fa1f87e2cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightworldConversionDuration: 0.5
+  darkworldConversionDuration: 0.5

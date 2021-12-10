@@ -596,17 +596,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &260965362 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1553532492653764016, guid: 64dcd2c0b290fca448b62266df13013e, type: 3}
-  m_PrefabInstance: {fileID: 1102976886}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f20fea37edb364f900a2f1ca6263b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &278789095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,9 +1482,11 @@ MonoBehaviour:
   gravity: 9.8
   isJumping: 0
   torchIsOn: 0
+  isStanding: 0
   clips: []
   isPaused: 0
-  isInteracted: 0
+  isPicked: 0
+  isDrop: 0
   forceToPushObj: 0.05
   animator: {fileID: 0}
   spriteRenderer: {fileID: 0}
@@ -1597,7 +1588,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ec7f95b7bdb0b4ebf5388c56050bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDialogueBox: {fileID: 260965362}
+  playerDialogueBox: {fileID: 0}
 --- !u!4 &825240862
 Transform:
   m_ObjectHideFlags: 0
@@ -2119,6 +2110,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1553532492818561105, guid: 64dcd2c0b290fca448b62266df13013e, type: 3}
+      propertyPath: torchIsOn
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1553532492818561111, guid: 64dcd2c0b290fca448b62266df13013e, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2646,6 +2641,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1905136454}
   effectsSource: {fileID: 1894890467}
+  lifeLight: {fileID: 0}
+  lightbulb: {fileID: 0}
+  windAmbience: {fileID: 0}
+  windAndBirdsAmbience: {fileID: 0}
 --- !u!4 &1490783623
 Transform:
   m_ObjectHideFlags: 0

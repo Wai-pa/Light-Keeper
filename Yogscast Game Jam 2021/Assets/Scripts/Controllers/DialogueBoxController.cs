@@ -9,13 +9,11 @@ public class DialogueBoxController : MonoBehaviour
 
     private float displayUntilTime = float.MinValue;
 
-    // Start is called before the first frame update
     void Start()
     {
         textMeshes = GetComponentsInChildren<TMP_Text>(includeInactive: true);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (gameObject.activeSelf && displayUntilTime < Time.time)

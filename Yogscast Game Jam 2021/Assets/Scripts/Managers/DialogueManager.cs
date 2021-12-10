@@ -20,13 +20,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -43,8 +41,82 @@ public class DialogueManager : MonoBehaviour
                 playerDialogueBox.SetText("Wow, I am on this platform now!", 4);
                 break;
             case DialogueEvent.IShouldGetANewLightBulb:
-                playerDialogueBox.SetText("Sigh... I guess I should replace that", 5);
+                StartCoroutine(IShouldGetANewLightBulb());
+                break;
+            case DialogueEvent.PeopleOnBench:
+                StartCoroutine(PeopleOnBench());
+                break;
+            case DialogueEvent.Store:
+                playerDialogueBox.SetText("Dammit, the stores shut!", 4);
+                break;
+            case DialogueEvent.OppositeDayGirl:
+                StartCoroutine(OppositeDayGirl());
+                break;
+            case DialogueEvent.StuckUnderStairs:
+                playerDialogueBox.SetText("Maybe I can get out if I let it crumble…", 4);
+                break;
+            case DialogueEvent.NeedToGetSeeds:
+                playerDialogueBox.SetText("Maybe I can grow those seeds that bird had in this", 4);
+                break;
+            case DialogueEvent.PressurePlatesUnlockDoor:
+                break;
+            case DialogueEvent.PeopleOnBenchAfterRessurection:
                 break;
         }
+    }
+
+    private IEnumerator IShouldGetANewLightBulb()
+    {
+        playerDialogueBox.SetText("...", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("*Sigh*", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("I guess I should replace that", 4);
+    }
+
+    private IEnumerator PeopleOnBench()
+    {
+        playerDialogueBox.SetText("Hey, do you know what day it is?", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("Uhh, Tuesday I think?", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("Oh… Okay, thanks", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("... The way you asked be that made me think today was something unusual", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("No, I don’t think so… Why would you think that?", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("Just the way you asked it is all", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("Oh, Okay", 2);
+    }
+
+    private IEnumerator OppositeDayGirl()
+    {
+        playerDialogueBox.SetText("Hey, do you know what day it is?", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("Why is everyone asking that today??", 2);
+
+        yield return new WaitForSeconds(1.5f);
+
+        playerDialogueBox.SetText("It’s OPPOSITE DAY!", 4);
     }
 }

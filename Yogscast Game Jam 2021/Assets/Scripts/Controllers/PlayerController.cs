@@ -67,6 +67,11 @@ public class PlayerController : MonoBehaviour
     {
         Movement();
         UpdateTorch();
+
+        if (controller.isGrounded && controller.velocity.magnitude > 2 && GetComponent<AudioSource>().isPlaying == false)
+        {
+            GetComponent<AudioSource>().Play();
+        }
     }
 
     void FixedUpdate()
@@ -196,7 +201,7 @@ public class PlayerController : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.gameObject.tag == "Movable Object")
+        if(hit.collider.gameObject.TryGetComponent<MoveObject>(out MoveObject moveObject))
         {
             if (isPicked)
             {
