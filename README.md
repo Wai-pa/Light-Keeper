@@ -1,15 +1,4 @@
 # Light Keeper - Yogscast Game Jam 2021
-**CONTROLS!!!:**
-
-WASD - Movement, 
-
-E - Grab, 
-
-R - Drop, 
-
-Space - Jump (only works when you move)
-
-
 
 **Story**
 
