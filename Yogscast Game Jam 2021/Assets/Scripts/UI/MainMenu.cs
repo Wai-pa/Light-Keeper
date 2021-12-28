@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
     public static MainMenu instance = null;
     public GameObject mainMenuPanel;
     public GameObject creditsPanel;
+    public GameObject controllersPanel;
     [SerializeField] private GameObject camera;
     GameManager manager;
 
@@ -44,6 +45,12 @@ public class MainMenu : MonoBehaviour
     public void OnCredits()
     {
         creditsPanel.SetActive(true);
+        mainMenuPanel.SetActive(false);
+    }
+
+    public void OnControllers()
+    {
+        controllersPanel.SetActive(true);
         mainMenuPanel.SetActive(false);
     }
 }
